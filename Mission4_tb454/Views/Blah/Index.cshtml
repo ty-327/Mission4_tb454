@@ -2,63 +2,53 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Ty's Website";
+
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Ty's Website</title>
-    <link rel="icon" href="img/IMG_2856.JPG" />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/mystyles.css" rel="stylesheet" />
-</head>
-<body>
-    <h1>Ty's Website</h1>
-    <img src="img/IMG_2856.JPG" class="bigImage" />
-    <p class="paragraph1">
-        I hope to get a lot out of IS 413. I know there is much to learn about C#, ASP.NET, and more. I hope to learn how to create a functioning webapp with this class.
-        I'm going to be honest: I don't really like web development, so I hope that I can enjoy this class despite that.
-    </p>
+<h1>Ty's Website</h1>
+<img src="img/IMG_2856.JPG" class="bigImage" />
+<p class="paragraph1">
+    I hope to get a lot out of IS 413. I know there is much to learn about C#, ASP.NET, and more. I hope to learn how to create a functioning webapp with this class.
+    I'm going to be honest: I don't really like web development, so I hope that I can enjoy this class despite that.
+</p>
 
-    <br />
-    <h3>Top 3 Jobs:</h3>
+<br />
+<h3>Top 3 Jobs:</h3>
 
-    <ol>
-        <li>Cybersecurity Consultant</li>
-        <li>Database Manager</li>
-        <li>Software Developer</li>
-    </ol>
+<ol>
+    <li>Cybersecurity Consultant</li>
+    <li>Database Manager</li>
+    <li>Software Developer</li>
+</ol>
 
-    <br />
-    <h3>Grade Calculator</h3>
-    <div>Type your score for each category below as a percent (i.e. 50 -- DO NOT USE % SIGN): </div>
-    <form>
-        <label>Assignments: </label>
-        <input id="assignmentScore" /><br />
+<br />
+<h3>Grade Calculator</h3>
+<div>Type your score for each category below as a percent (i.e. 50 -- DO NOT USE % SIGN): </div>
+<form>
+    <label>Assignments: </label>
+    <input id="assignmentScore" /><br />
 
-        <label>Group Projects: </label>
-        <input id="groupProjScore" /><br />
+    <label>Group Projects: </label>
+    <input id="groupProjScore" /><br />
 
-        <label>Quizzes: </label>
-        <input id="quizScore" /><br />
+    <label>Quizzes: </label>
+    <input id="quizScore" /><br />
 
-        <label>Midterm Exam: </label>
-        <input id="midtermScore" /><br />
+    <label>Midterm Exam: </label>
+    <input id="midtermScore" /><br />
 
-        <label>Final Exam: </label>
-        <input id="finalExamScore" /><br />
+    <label>Final Exam: </label>
+    <input id="finalExamScore" /><br />
 
-        <label>INTEX: </label>
-        <input id="intexScore" /><br />
+    <label>INTEX: </label>
+    <input id="intexScore" /><br />
 
-        <input id="calculateBtn" type="button" value="Calculate Grade" />
-    </form>
+    <input id="calculateBtn" type="button" value="Calculate Grade" />
+</form>
 
-    <br />
-    <p class="finalGradeP">Final Grade: <span class="finalGradeSpan"></span></p>
+<br />
+<p class="finalGradeP">Final Grade: <span class="finalGradeSpan"></span></p>
 
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="js/gradeCalculator.js"></script>
-</body>
-</html>
+    
+<script src="js/gradeCalculator.js"></script>
