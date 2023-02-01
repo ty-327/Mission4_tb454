@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+
+<h3>Grade Calculator</h3>
+<div>Type your score for each category below as a percent (i.e. 50 -- DO NOT USE % SIGN): </div>
+<form>
+    <label>Assignments: </label>
+    <input id="assignmentScore" /><br />
+
+    <label>Group Projects: </label>
+    <input id="groupProjScore" /><br />
+
+    <label>Quizzes: </label>
+    <input id="quizScore" /><br />
+
+    <label>Midterm Exam: </label>
+    <input id="midtermScore" /><br />
+
+    <label>Final Exam: </label>
+    <input id="finalExamScore" /><br />
+
+    <label>INTEX: </label>
+    <input id="intexScore" /><br />
+
+    <input id="calculateBtn" type="button" value="Calculate Grade" />
+</form>
+
+<br />
+<p class="finalGradeP">Final Grade: <span class="finalGradeSpan"></span></p>
+
+
+<script src="js/gradeCalculator.js"></script>

@@ -12,5 +12,10 @@ namespace Mission4_tb454.Controllers
         {
             return View();
         }
+
+        public IActionResult GradeCalculator()
+        {
+            return View();
+        }
     }
 }
