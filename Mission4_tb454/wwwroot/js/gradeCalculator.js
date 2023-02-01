@@ -46,7 +46,7 @@
         finalLetterGrade = "E";
     }
 
-    alert(Math.round(finalScore * 100) / 100) + "% / " + finalLetterGrade);
+    alert("Final Score: " + (Math.round(finalScore * 100) / 100) + "% / " + finalLetterGrade);
 
     //$(".finalGradeP .finalGradeSpan").html((
     //    Math.round(finalScore * 100) / 100) + "% / " + finalLetterGrade
