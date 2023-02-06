@@ -8,7 +8,7 @@ namespace Mission4_tb454.Models
 {
     public class GradeCalcModel
     {
-        [Range(1,100)] // Put the data validation here! maybe "Assignment > 0" "Assignment < 100"
+        [Range(1,100)] // Data validation -- make sure number input is between 1 and 100
         public double Assignment { get; set; }
         [Range(1, 100)]
         public double Group_Project { get; set; }

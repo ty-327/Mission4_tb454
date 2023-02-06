@@ -7,6 +7,7 @@
 
 @model GradeCalcModel;
 
+<!--Grade Calculator-->
 <h3>Grade Calculator</h3>
 <div>Type your score for each category below as a percent (i.e. 50 -- DO NOT USE % SIGN): </div>
 <form method="post">
@@ -30,6 +31,7 @@
 
     <input id="calculateBtn" type="submit" value="Calculate Grade" />
 
+    <!--Display error messages per data validation parameters-->
     <div asp-validation-summary="All"></div>
 
 </form>

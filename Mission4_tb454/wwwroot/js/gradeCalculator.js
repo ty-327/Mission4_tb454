@@ -1,4 +1,5 @@
 ﻿$("#calculateBtn").click(function () {
+    // get values from form and put them in variables
     assignmentScore = $("#assignmentScore").val();
     groupProjScore = $("#groupProjScore").val();
     quizScore = $("#quizScore").val();
@@ -6,9 +7,11 @@
     finalExamScore = $("#finalExamScore").val();
     intexScore = $("#intexScore").val();
 
+    // calculate final score
     finalScore = (assignmentScore * .5) + (groupProjScore * .1) + (quizScore * .1) +
         (midtermScore * .1) + (finalExamScore * .1) + (intexScore * .1);
 
+    // assign letter grade
     if (finalScore >= 94.00) {
         finalLetterGrade = "A";
     }
@@ -46,6 +49,7 @@
         finalLetterGrade = "E";
     }
 
+    // output
     alert("Final Score: " + (Math.round(finalScore * 100) / 100) + "% / " + finalLetterGrade);
 
     //$(".finalGradeP .finalGradeSpan").html((
