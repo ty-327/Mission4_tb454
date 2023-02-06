@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission4_tb454.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,14 @@ namespace Mission4_tb454.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult GradeCalculator()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult GradeCalculator(GradeCalcModel model)
         {
             return View();
         }

@@ -5,29 +5,35 @@
 
 }
 
+@model GradeCalcModel;
+
 <h3>Grade Calculator</h3>
 <div>Type your score for each category below as a percent (i.e. 50 -- DO NOT USE % SIGN): </div>
-<form>
+<form method="post">
     <label>Assignments: </label>
-    <input id="assignmentScore" /><br />
+    <input id="assignmentScore" asp-for="Assignment" /><br />
 
     <label>Group Projects: </label>
-    <input id="groupProjScore" /><br />
+    <input id="groupProjScore" asp-for="Group_Project" /><br />
 
     <label>Quizzes: </label>
-    <input id="quizScore" /><br />
+    <input id="quizScore" asp-for="Quiz" /><br />
 
     <label>Midterm Exam: </label>
-    <input id="midtermScore" /><br />
+    <input id="midtermScore" asp-for="Midterm" /><br />
 
     <label>Final Exam: </label>
-    <input id="finalExamScore" /><br />
+    <input id="finalExamScore" asp-for="Final_Exam" /><br />
 
     <label>INTEX: </label>
-    <input id="intexScore" /><br />
+    <input id="intexScore" asp-for="Intex" /><br />
 
-    <input id="calculateBtn" type="button" value="Calculate Grade" />
+    <input id="calculateBtn" type="submit" value="Calculate Grade" />
+
+    <div asp-validation-summary="All"></div>
+
 </form>
+
 
 <br />
 <p class="finalGradeP">Final Grade: <span class="finalGradeSpan"></span></p>
